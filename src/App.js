@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import AppRouter from './components/approuter';
+import LandingPage from './components/landingpage';
 
 function App() {
   return (
     <div className="App">
-        <AppRouter />
+        <LandingPage />
     </div>
   );
 }
