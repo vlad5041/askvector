@@ -8,14 +8,14 @@ const burger = require('../assets/img/burger.svg');
 class NavBar extends Component{
     render(){
         return (
-            <div className="navbar">
+            <header className="navbar">
                 <Grid>
-                    <Cell col={2} phone={2}>
+                    <Cell col={2} offsetDesktop={1} phone={2} style={{textAlign: 'left'}}>
                         <Link style={{textDecoration: 'none', color: 'white'}} to="/">
                             <img src={logo} alt="Логотип АСК Вектор" className="corner-logo"/>
                         </Link>
                     </Cell>
-                    <Cell col={1} offsetDesktop={6} align={"middle"} hidePhone={true}>
+                    <Cell col={1} offsetDesktop={4} align={"middle"} hidePhone={true}>
                         <Link to="/about"><span>О компании</span></Link>
                     </Cell>
                     <Cell col={1} align={"middle"} hidePhone={true}>
@@ -27,11 +27,11 @@ class NavBar extends Component{
                     <Cell col={1} align={"middle"} hidePhone={true}>
                         <Link to="/contacts"><span>Контакты</span></Link>
                     </Cell>
-                    <Cell phone={1} offsetPhone={1} align={"middle"} hideDesktop={true}>
+                    <Cell phone={1} align={"middle"} hideDesktop={true}>
                         <img src={burger} alt="" style={{width: '25px', height: 'auto', cursor: 'pointer'}}/>
                     </Cell>
                 </Grid>
-            </div>
+            </header>
         );
     }
 }
