@@ -11,8 +11,7 @@ import NavBar from './navbar';
 function AppRouter() {
     return (
         <Router>
-            <NavBar />
-
+        <NavBar />
             <Route path="/" exact component={LandingPage} />
             <Route path="/about/" component={About} />
             <Route path="/services/" component={Services} />

@@ -6,7 +6,7 @@ const arrow = require('../assets/img/arrow.svg');
 class Slider extends Component{
     render() {
         return(
-            <div className="slider">
+            <div className="slider" id="top">
                 <Grid style={{paddingTop: '60px'}}>
                     <Cell col={12} offsetDesktop={1} phone={2} align={"bottom"}>
                         <h1>Дом под ключ!</h1>
@@ -19,7 +19,7 @@ class Slider extends Component{
                 </Grid>
                 <Grid>
                     <Cell col={3} offsetDesktop={1}>
-                        <button>Заказать <img src={arrow} alt=""/></button>
+                        <a href="#contacts"><button>Заказать <img src={arrow} alt=""/></button></a>
                     </Cell>
                 </Grid>
                 <Grid style={{marginRight: '97px', background: '#fff', position: 'absolute', bottom: '0', marginLeft: '0'}}>
@@ -41,7 +41,7 @@ class Slider extends Component{
                     </Cell>
                 </Grid>
                 <Cell className="slider-arrow" col={1} hidePhone={true}>
-                    <img src={arrow} alt=""/>
+                    <a href="#contacts"><img src={arrow} alt=""/></a>
                 </Cell>
             </div>
         );
