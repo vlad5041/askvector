@@ -5,6 +5,17 @@
 /.pnp
 .pnp.js
 .idea
+/_windows
+/codestyles
+/colors
+/colors.scheme.xml
+/debugger.xml
+/editor.xml
+/filetypes.xml
+/ide.general.xml
+/material_theme.xml
+/vcs.xml
+/vim_settings.xml
 
 # testing
 /coverage
