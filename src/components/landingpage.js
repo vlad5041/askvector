@@ -5,20 +5,21 @@ import NavBar from './navbar'
 import Contacts from './contacts'
 import Footer from './footer'
 
-class LandingPage extends Component {
+export default class LandingPage extends Component {
     render() {
         return(
             <div id="content">
-                <div className="navbar">
+                <div id="top"></div>
+                <div className="navbar" >
                     <NavBar />
                 </div>
                 <div className="slider-wrapper">
                     <Slider />
                 </div>
-                <div className="advantage" >
+                <div className="advantage" id="advantage" >
                     <Advantage />
                 </div>
-                <div className="contacts" >
+                <div className="contacts" id="contacts" >
                     <Contacts />
                 </div>
                 <div className="footer">
@@ -27,6 +28,4 @@ class LandingPage extends Component {
             </div>
         )
     }
-}
-
-export default LandingPage;
+};

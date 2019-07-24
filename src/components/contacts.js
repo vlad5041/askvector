@@ -5,7 +5,7 @@ import YandexMaps from "./yandexmaps";
 class Contacts extends Component{
     render() {
         return(
-            <div id="contacts" className="h2">
+            <div className="h2">
                 <Grid>
                     <Cell col={11} offsetDesktop={1}>
                         <h2>Как с нами связаться?</h2>

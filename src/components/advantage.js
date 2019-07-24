@@ -8,7 +8,7 @@ const binocular = require('../assets/img/binocular.svg');
 class Advantage extends Component{
     render() {
         return(
-            <div id="advantage" className="h2" style={{padding: '0', margin: '0'}}>
+            <div className="h2" style={{padding: '0', margin: '0'}}>
                 <Grid>
                     <Cell col={11} offsetDesktop={1}>
                         <h2>Ваши преимущества</h2>
